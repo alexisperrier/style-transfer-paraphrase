@@ -9,7 +9,6 @@ click==7.1.2
 cymem==2.0.4
 Cython==0.29.21
 dataclasses==0.6
-en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.1/en_core_web_sm-2.3.1.tar.gz
 filelock==3.0.12
 flake8==3.8.4
 Flask==1.1.2

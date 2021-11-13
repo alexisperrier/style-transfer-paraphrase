@@ -24,7 +24,7 @@ with open("config.json", "r") as f:
     configuration = json.loads(f.read())
     OUTPUT_DIR = configuration["output_dir"]
 
-
+# with torch.cuda.device(self.device if self.device.type == 'cuda' else None):
 with torch.cuda.device(0):
     print("Loading paraphraser....")
     paraphraser = GPT2Generator(OUTPUT_DIR + "/models/paraphraser_gpt2_large", upper_length="same_5")
