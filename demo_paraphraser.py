@@ -16,7 +16,10 @@ if not torch.cuda.is_available():
     sys.exit()
 
 print("Loading paraphraser...")
-paraphraser = GPT2Generator(args.model_dir, upper_length="same_5")
+# paraphraser = GPT2Generator(args.model_dir, upper_length="same_5")
+
+paraphraser = GPT2Generator(f"./data/models/cds_models/{args.model_dir}", upper_length="same_5")
+
 
 print("\n\nNOTE: Ignore the weight mismatch error, this is due to different huggingface/transformer versions + minor modifications I did myself, shouldn't affect the paraphrases.\n\n")
 
