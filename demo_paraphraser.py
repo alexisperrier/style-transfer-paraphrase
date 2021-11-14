@@ -10,6 +10,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--model_dir', default="tweets", type=str)
 parser.add_argument('--top_p_value', default=0.6, type=float)
 args = parser.parse_args()
+print(args)
 
 if not torch.cuda.is_available():
     print("Please check if a GPU is available or your Pytorch installation is correct.")
